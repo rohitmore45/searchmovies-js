@@ -6,6 +6,10 @@ body {
   background-color: darkgray;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 h1 {
   text-align: center;
   font-size: 35px;
@@ -77,4 +81,34 @@ h1 {
 strong {
   font-size: 30px;
   text-align: center;
+}
+
+@media (max-width: 320px) {
+  html{
+    scroll-behavior: smooth;
+  }
+  #header input {
+    width: 200px;
+    margin: auto;
+  }
+  #movieslist {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 80%;
+    gap: 20px;
+  }
+  .movieCard {
+    width: 140px;
+    height: 200px;
+    border-radius: 15px;
+    overflow-y: scroll;
+  }
+  .movieCard img {
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0 0;
+  }
+  .movieCard h2 {
+    font-size: 14px;
+  }
 }
