@@ -10,7 +10,7 @@ button.addEventListener("click", function () {
 
 function searchMovies(st) {
   const apikey = "8d94ca69";
-  const apiurl = `http://www.omdbapi.com/?s=${st}&apikey=${apikey}`;
+  const apiurl = `https://www.omdbapi.com/?s=${st}&apikey=${apikey}`;
 
   fetch(apiurl)
     .then(function (res) {
