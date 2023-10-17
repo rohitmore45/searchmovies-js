@@ -83,23 +83,26 @@ strong {
   text-align: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   html{
     scroll-behavior: smooth;
   }
+  #header h1{
+    font-size: 50px;
+  }
   #header input {
-    width: 200px;
+    width: 350px;
     margin: auto;
   }
   #movieslist {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(4, auto);
     width: 80%;
     gap: 20px;
   }
   .movieCard {
-    width: 140px;
-    height: 200px;
+    width: 150px;
+    height: 250px;
     border-radius: 15px;
     overflow-y: scroll;
   }
