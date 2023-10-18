@@ -32,11 +32,13 @@ function displayMovies(data) {
       const movieCard = document.createElement("div");
       movieCard.classList.add("movieCard");
       movieCard.innerHTML = `
-          <a href = "https://www.imdb.com/find/?q=${movie.Title}&ref_=nv_sr_sm" target="_blank">                              
+                                       
                 <img src=${movie.Poster} alt=${movie.Title}/>
                 <h2>${movie.Title}</h2>
                 <p>${movie.Year}</p>
-          </a>`
+                <a href = "https://www.imdb.com/find/?q=${movie.Title}&ref_=nv_sr_sm" target="_blank">
+                <button type="submit">Movie Details</button>
+                </a>`
 
       movieslist.appendChild(movieCard);
     });

@@ -3,16 +3,19 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: darkgray;
+  background-image: url(./movies.gif);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 h1 {
   text-align: center;
   font-size: 35px;
+  color: white;
 }
 #header {
   display: flex;
@@ -30,6 +33,7 @@ h1 {
   outline: none;
   box-shadow: 2px 2px 5px black;
   border-radius: 20px;
+  background-color: darkgray;
 }
 #header input:hover {
   border-bottom: 3px solid orange;
@@ -64,7 +68,7 @@ h1 {
 
 .movieCard {
   width: 320px;
-  height: 560px;
+  height: auto;
   box-shadow: 2px 2px 8px black;
   border-radius: 25px;
   background-color: aliceblue;
@@ -74,34 +78,47 @@ h1 {
   height: 70%;
   border-radius: 25px 25px 0 0;
 }
-.movieCard:hover {
+/* .movieCard:hover {
   transform: scale(1.02);
   transition: all 0.2s ease-in;
-}
+} */
 strong {
   font-size: 30px;
   text-align: center;
 }
 
-@media (max-width: 720px) {
-  html{
-    scroll-behavior: smooth;
-  }
-  #header h1{
+.movieCard button {
+  padding: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  /* border: none; */
+  background-color:gainsboro;
+}
+.movieCard button:hover{
+    transform: scale(1.04);
+    transition: all 0.2 ease-in;
+    background-color:darkkhaki;
+    
+
+}
+
+@media (max-width: 450px) {
+  #header h1 {
     font-size: 50px;
   }
   #header input {
-    width: 350px;
+    width: 250px;
     margin: auto;
   }
   #movieslist {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
     width: 80%;
     gap: 20px;
   }
   .movieCard {
-    width: 150px;
+    width: 180px;
     height: 250px;
     border-radius: 15px;
     overflow-y: scroll;
