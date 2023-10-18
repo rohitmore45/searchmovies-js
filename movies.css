@@ -85,6 +85,7 @@ h1 {
 strong {
   font-size: 30px;
   text-align: center;
+  color:aliceblue;
 }
 
 .movieCard button {
@@ -105,7 +106,7 @@ strong {
 
 @media (max-width: 450px) {
   #header h1 {
-    font-size: 50px;
+    font-size:40px;
   }
   #header input {
     width: 250px;
@@ -118,8 +119,8 @@ strong {
     gap: 20px;
   }
   .movieCard {
-    width: 180px;
-    height: 250px;
+    width: 150px;
+    height: 260px;
     border-radius: 15px;
     overflow-y: scroll;
   }
@@ -131,4 +132,5 @@ strong {
   .movieCard h2 {
     font-size: 14px;
   }
+  
 }
