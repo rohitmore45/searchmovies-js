@@ -31,10 +31,12 @@ function displayMovies(data) {
     data.Search.forEach(function (movie) {
       const movieCard = document.createElement("div");
       movieCard.classList.add("movieCard");
-      movieCard.innerHTML = `                
+      movieCard.innerHTML = `
+          <a href = "https://www.imdb.com/find/?q=${movie.Title}&ref_=nv_sr_sm" target="_blank">                              
                 <img src=${movie.Poster} alt=${movie.Title}/>
                 <h2>${movie.Title}</h2>
-                <p>${movie.Year}</p>`
+                <p>${movie.Year}</p>
+          </a>`
 
       movieslist.appendChild(movieCard);
     });
